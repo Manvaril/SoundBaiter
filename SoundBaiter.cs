@@ -27,7 +27,7 @@ namespace Oxide.Plugins
                 ["Usage"] = " /{0} show/hide",
                 ["PanelHidden"] = " Hidden",
                 ["PanelRefresh"] = " Refreshed/Shown",
-                ["Title"] = "Sound Baiter",
+                ["Title"] = "Sound Baiter [<color=#FF0000>CLOSE</color>]",
                 ["TBuild"] = "Twig Build",
                 ["TBuild"] = "Twig Build",
                 ["TBreak"] = "Twig Break",
@@ -66,7 +66,8 @@ namespace Oxide.Plugins
                 ["BMImpact"] = "Bullet Metal Impact",
                 ["BRImpact"] = "Bullet Rock Impact",
                 ["HShot"] = "Headshot",
-                ["Murderer"] = "Murderer Breathing"
+                ["Murderer"] = "Murderer Breathing",
+                ["CloseGUI"] = "Close"
             }, this);
         }
 
@@ -334,13 +335,14 @@ namespace Oxide.Plugins
                     AnchorMin = "0.8 0.125",
                     AnchorMax = "0.995 0.99"
                 },
-                CursorEnabled = false
+                CursorEnabled = true
             }, "Hud", "sbGUI");
 
             elements.Add(new CuiButton
             {
                 Button =
                 {
+                    Command = "soundbait toggle hide",
                     Color = "0.20 0.50 0.80 0.5"
                 },
                 Text =
