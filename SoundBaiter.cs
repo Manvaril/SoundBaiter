@@ -11,7 +11,7 @@ using UnityEngine;
 
 namespace Oxide.Plugins
 {
-    [Info("SoundBaiter", "Manvaril", "0.0.1")]
+    [Info("SoundBaiter", "Manvaril", "1.0.0")]
     [Description("Play rust sounds to nearby players.")]
 
     class SoundBaiter : RustPlugin
