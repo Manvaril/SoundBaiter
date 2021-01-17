@@ -11,9 +11,17 @@ Play rust sounds to nearby players
 
 * Command based alternative to GUI
 
-## Commands
+# Permissions
+
+soundbaiter.allow - allows the commands and GUI to be used
+
+## Chat Commands
 
 **/soundbait [show/hide]** - Show/Hide GUI Menu
+
+## Console Commands
+
+**/soundbait toggle [show/hide]**
 
 **/soundbait action [keyword]** - Play specific sound
 
